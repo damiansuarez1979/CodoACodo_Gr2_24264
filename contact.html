@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Tienda de Bicicletas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+<body>
+    <header>
+        <div>
+            <img src="" alt="">          
+            <h1 class="animate__animated animate__bounce" onclick="location.reload()">Bici-Shop</h1>
+            <p>Tienda De Biciletas</p>
+            <a href="#"></a>
+
+        </div>
+    </header>
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#seccion1">Mountain Bike</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#seccion2">Bicicletas Urbanas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#seccion3">
+                        Bicicletas de Ruta </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#seccion4">Bicicletas infantiles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Contacto -->
+        <section id="contacto" class="seccion">
+            <div class="divIframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d822.298425798846!2d-58.51558424420262!3d-34.47261005174792!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1717644115302!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h2>Contacto</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tipoConsulta">Tipo de Consulta</label>
+                    <select class="form-control" id="tipoConsulta" name="tipoConsulta">
+                        <option value="general">General</option>
+                        <option value="soporte">Soporte/Consultas</option>
+                        <option value="ventas">Ventas</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button onclick="window.location.href='index.html'">Volver al inicio</button>
+            </form>
+        </section>
+        </main>
+        <footer>
+        
+            <div >
+                <div class="botones redes sociales ">
+                    <a href="https://www.facebook.com" target="_blank" class="btn btn-social-icon btn-facebook">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="btn btn-social-icon btn-twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="btn btn-social-icon btn-instagram">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    
+                </div>
+                <p >Grupo 2 - Comision 24264 - Codo a Codo </p>
+                <p>&copy; 2024 Tienda de Bicis. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    </html>

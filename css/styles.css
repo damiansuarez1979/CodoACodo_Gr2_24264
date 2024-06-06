@@ -1,0 +1,160 @@
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url(../img/header2.jpg);
+    
+}
+header div {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 15px;
+    color: #FEF9E7;
+    font-size: 23px;
+
+}
+body {
+    background-color: #CBBBA8; /* Color carmel */
+    margin: auto;
+    padding: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+img{
+    border-radius: 10px;
+}
+
+.navbar-brand, .nav-link {
+    color: #000 !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #000;
+}
+
+.seccion {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.grid-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    border-bottom: #0a0a0a;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3f464e;
+    color: white;
+    border:#05e776;
+    border-radius: 4px;
+    cursor: progress;
+}
+
+button:hover {
+    background-color: #06fc81f1;
+}
+
+/* Estilos del formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: #7d97ce;
+    text-align:left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-check {
+    margin-top: 15px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.about{
+    text-align: center;
+}
+footer{
+    background-color: #3f464e;
+    color: #dce2ea;
+    text-align: justify;
+    padding: 10px;
+    text-align: center;
+}   
+
+.btn-instagram { background: #e1306c; }
+.btn-facebook { background: #3b5998; }
+.btn-linkedin { background: #0077b5; }
+.btn-twitter { background: #1da1f2; }
+
+.btn-instagram:hover { background: #c13584; }
+.btn-facebook:hover { background: #2d4373; }
+.btn-twitter:hover { background: #0d95e8; }
+.btn-linkedin:hover { background: #005983; }
+
+
+
+/* Estilos específicos para diferentes tamaños de pantalla (media queries) */
+@media (max-width: 767px) {
+    /* Estilos para Celulares / Telefeonos Móviles */
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para Tablets */
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (min-width: 992px) {
+    /* Estilos para PC de Escritorio */
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
