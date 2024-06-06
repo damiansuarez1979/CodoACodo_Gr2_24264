@@ -1,0 +1,60 @@
+
+  [
+    {
+        "Nombre" : "Trek Supercaliber",
+        "marca" : "Trek",
+        "Cuadro" : "fibra de carbono OCLV Mountain",
+        "Suspension" : "IsoStrut",
+        "Ruedas" : "Ruedas 29x2.11 de Carbono Bontrager Kovee",
+        "Frenos" : "Shimano SLX M6210",
+        "Cambios" : "Shimano SLX M9100, 12 velocidades",
+        "Peso": "9kg",
+        "Rodado" : 29,
+        "Precio" : 1000
+
+    },
+   
+    {
+        "Nombre" : "Firebird Bin 29 SU ",
+        "marca" : "Firebird",
+        "Cuadro" : "Cuadro MTB acero 29 Firebird standard",
+        "Suspension" : "Suspensión dw-link™ con 165 mm  ",
+        "Ruedas" : "Ruedas DT Swiss M1900 de 29, con 30 mm de ancho",
+        "Frenos" : "Shimano SLX M7120",
+        "Cambios" : "Shimano SLX M7100, 12 velocidades",
+        "Peso": "8kg",
+        "Rodado" : 29,
+        "Precio" : 800
+
+    },
+
+
+    {
+        "Nombre" : "scott spark rc 900 pro ",
+        "marca" : "Scott",
+        "Cuadro" : "Carbono Spark RC, tecnología IMP, HMF",
+        "Suspension" : "RockShox SID Select+ RL3 Air",
+        "Ruedas" : "Maxxis Rekon Race 2.35, 120TPI Kevlar Bead 29",
+        "Frenos" : "Shimano XTR M9100 de disco hidráulico",
+        "Cambios" : "Shimano XTR RD-M9100 SGS de 12 velocidades",
+        "Peso": "10.8kg",
+        "Rodado" : 29,
+        "Precio" : 950
+
+    },
+ 
+
+{
+    "Nombre" : "Trek Supercaliber",
+    "marca" : "Orbea",
+    "Cuadro" : "Aluminio triple conificado hidroformado",
+    "Suspension" : "RockShox SID Select+ RL3 Air",
+    "Ruedas" : "Orbea OC1 29",
+    "Frenos" : "Shimano MT201",
+    "Cambios" : "Shimano Deore M5100, 11 velocidades",
+    "Peso": "9kg",
+    "Rodado" : 29,
+    "Precio" : 1050
+
+}
+  ]
