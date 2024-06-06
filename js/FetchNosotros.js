@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
     let currentIndex = 0;
-    let integrantesData = [];
+    let desarroladoresData = [];
 
     // Cargar los datos del JSON al cargar la página
     fetch("https://github.com/damiansuarez1979/CodoACodo_Gr2_24264/blob/main/data.json")
