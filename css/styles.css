@@ -127,7 +127,7 @@ footer{
 
 /* Sección de nosotros 
 */
-/** {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -143,7 +143,7 @@ body, header, main {
     min-width: 800px;
     /* border: 3px green solid; */
 
-*/
+
 article .sumario {
     flex-grow: 1;
     flex-basis: 100%; 

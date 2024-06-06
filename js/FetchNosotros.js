@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
             let nuevaPersona = referencia.cloneNode(true);
             nuevaPersona.querySelector("img").src = desarrolador.foto_perfil;
             nuevaPersona.querySelector("img").alt = "Foto Desarrollador";
-            nuevaPersona.querySelector(".nombre").innerHTML = desarrolado.nombre + " " + desarrolador.apellido;
+            nuevaPersona.querySelector(".nombre").innerHTML = desarrolador.nombre + " " + desarrolador.apellido;
             nuevaPersona.querySelector(".edad").innerHTML = desarrolador.edad + " años";
-            nuevaPersona.querySelector(".residencia").innerHTML = integrante.residencia;
+            nuevaPersona.querySelector(".residencia").innerHTML = desarrolador.residencia;
 
             contenedor.appendChild(nuevaPersona);
 
