@@ -12,18 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     let desarroladoresData = [];
 
-    // Cargar los datos del JSON al cargar la página
+ 
     fetch("https://github.com/damiansuarez1979/CodoACodo_Gr2_24264/blob/main/data.json")
         .then(response => response.json())
         .then(data => {
-            // Guardar los datos recibidos
+           
             desarroladoresData = data.desarroladores;
-            console.log("Datos recibidos:", desarroladoresData); // Ver los datos completos
+            console.log("Datos recibidos:", desarroladoresData); 
         })
         .catch(error => console.log("Algo salio mal " + error));
 
     function AgregarArticulo() {
-        // Verificar que haya más desarroladores por agregar
+        
         if (currentIndex < desarroladoresData.length) {
             let desarrolador = desarroladoresData[currentIndex];
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             contenedor.appendChild(nuevaPersona);
 
-            // Incrementar el índice del desarrollador actual
+            
             currentIndex++;
         } else {
             console.log("No hay más Desarrolladores para agregar.");
@@ -50,14 +50,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function QuitarArticulo() {
         if (contenedor.childElementCount > 0) {
             contenedor.removeChild(contenedor.lastChild);
-            // Decrementar el índice del desarrollador actual para poder agregarlo de nuevo si es necesario
+            
             if (currentIndex > 0) {
                 currentIndex--;
             }
         }
     }
 
-    // Eventos
+    // Clicks de Botones
     botonAgregar.addEventListener("click", function() {
         AgregarArticulo();
     });
