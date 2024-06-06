@@ -1,18 +1,18 @@
 {
-    "Desarrolladores": [
+    "desarrolladores": [
         {
-        "Apellido": "Suarez",
-        "Nombre": "Damian",
+        "apellido": "Suarez",
+        "nombre": "Damian",
         "edad": 44,
-        "Residencia": "Comodoro Rivadavia - Chubut",
-        "Foto perfil": "https://github.com/damiansuarez1979/TP1_CaC_Grupo2/tree/main/img/damiansuarez.jpg" 
+        "residencia": "Comodoro Rivadavia - Chubut",
+        "foto_perfil": "https://github.com/damiansuarez1979/TP1_CaC_Grupo2/tree/main/img/damiansuarez.jpg" 
         },
         {
-            "Apellido": "Hernandez",
-        "Nombre": "Ignacio",
+        "apellido": "Hernandez",
+        "nombre": "Ignacio",
         "edad": 31,
-        "Residencia": "Almirante Brown - Buenos Aires",
-        "Foto perfil": "https://github.com/damiansuarez1979/TP1_CaC_Grupo2/tree/main/img/IgnacioHernandez.jpg" 
+        "residencia": "Almirante Brown - Buenos Aires",
+        "foto_perfil": "https://github.com/damiansuarez1979/TP1_CaC_Grupo2/tree/main/img/IgnacioHernandez.jpg" 
         }
         
     ]
