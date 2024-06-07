@@ -34,27 +34,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     function AgregarArticulo() {
-        
-        if (currentIndex < desarroladoresData.length) {
-            let desarrolador = desarroladoresData[currentIndex];
+        if (Array.isArray(desarrolladoresData) && desarrolladoresData.length > 0 && currentIndex < desarrolladoresData.length) {
+            let desarrollador = desarrolladoresData[currentIndex];
 
-            console.log("Nombre:", desarrolador.nombre);
-            console.log("Apellido:", desarrolador.apellido);
-            console.log("Foto Perfil:", desarrolador.foto_perfil);
+            console.log("Nombre:", desarrollador.nombre);
+            console.log("Apellido:", desarrollador.apellido);
+            console.log("Foto Perfil:", desarrollador.foto_perfil);
 
             let nuevaPersona = referencia.cloneNode(true);
-            nuevaPersona.querySelector("img").src = desarrolador.foto_perfil;
+            nuevaPersona.querySelector("img").src = desarrollador.foto_perfil;
             nuevaPersona.querySelector("img").alt = "Foto Desarrollador";
-            nuevaPersona.querySelector(".nombre").innerHTML = desarrolador.nombre + " " + desarrolador.apellido;
-            nuevaPersona.querySelector(".edad").innerHTML = desarrolador.edad + " años";
-            nuevaPersona.querySelector(".residencia").innerHTML = desarrolador.residencia;
+            nuevaPersona.querySelector(".nombre").innerHTML = desarrollador.nombre + " " + desarrollador.apellido;
+            nuevaPersona.querySelector(".edad").innerHTML = desarrollador.edad + " años";
+            nuevaPersona.querySelector(".residencia").innerHTML = desarrollador.residencia;
 
             contenedor.appendChild(nuevaPersona);
 
-            
             currentIndex++;
         } else {
-            console.log("No hay más Desarrolladores para agregar.");
+            console.log("No hay más Desarrolladores para agregar o los datos no están disponibles.");
         }
     }
 
