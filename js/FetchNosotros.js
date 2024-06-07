@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
      
  
-    fetch("https://raw.githubusercontent.com/damiansuarez1979/CodoACodo_Gr2_24264/main/data.json?token=GHSAT0AAAAAACS6DDUQQQLXRUPIIVZWFXPGZTCLDMQ")
+    fetch("https://raw.githubusercontent.com/damiansuarez1979/CodoACodo_Gr2_24264/main/data.json")
         .then(response => response.json())
         .then(data => {
            
