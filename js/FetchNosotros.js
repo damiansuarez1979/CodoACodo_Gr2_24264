@@ -12,16 +12,23 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     let desarroladoresData = [];
 
+     // Desactivar el botón Agregar hasta que los datos estén cargados
+     botonAgregar.disabled = true;
  
-    fetch("https://github.com/damiansuarez1979/CodoACodo_Gr2_24264/blob/main/data.json")
+    fetch("https://raw.githubusercontent.com/damiansuarez1979/CodoACodo_Gr2_24264/main/data.json?token=GHSAT0AAAAAACS6DDUQQQLXRUPIIVZWFXPGZTCLDMQ")
         .then(response => response.json())
         .then(data => {
            
             desarroladoresData = data.desarroladores;
             console.log("Datos recibidos:", desarroladoresData); 
-        })
-        .catch(error => console.log("Algo salio mal " + error));
-
+               // Habilitar el botón Agregar una vez que los datos estén cargados
+               botonAgregar.disabled = false;
+            })
+        
+            .catch(error => {
+                console.log("Algo salió mal: " + error);
+            });
+    
     function AgregarArticulo() {
         
         if (currentIndex < desarroladoresData.length) {
@@ -58,11 +65,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Clicks de Botones
+    botonAgregar.addEventListener("click", AgregarArticulo);
+    botonQuitar.addEventListener("click", QuitarArticulo);
+
+    /*
     botonAgregar.addEventListener("click", function() {
         AgregarArticulo();
     });
 
     botonQuitar.addEventListener("click", function() {
         QuitarArticulo();
-    });
+    });*/
 });
