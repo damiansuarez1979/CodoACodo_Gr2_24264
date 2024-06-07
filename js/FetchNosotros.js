@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
            
+            
             desarroladoresData = data.desarroladores;
             console.log("Datos recibidos:", desarroladoresData); 
               
