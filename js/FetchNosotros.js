@@ -17,16 +17,21 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("https://raw.githubusercontent.com/damiansuarez1979/CodoACodo_Gr2_24264/main/data.json")
         .then(response => response.json())
         .then(data => {
+            if (data.desarrolladores && Array.isArray(data.desarrolladores)) {
+                desarrolladoresData = data.desarrolladores;
            
-            
-            desarroladoresData = data.desarroladores;
+            }
+           else {
             console.log("Datos recibidos:", desarroladoresData); 
-              
-            })
+           
+           }    
+        })
+        
         
             .catch(error => {
                 console.log("Algo salió mal: " + error);
             });
+
     
     function AgregarArticulo() {
         
