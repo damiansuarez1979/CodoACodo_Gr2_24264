@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
     let currentIndex = 0;
-    let desarroladoresData = [];
+    let desarrolladoresData = [];
 
      
  
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
            
             }
            else {
-            console.log("Datos recibidos:", desarroladoresData); 
+            console.log("Datos recibidos:", desarrolladoresData); 
            
            }    
         })
