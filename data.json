@@ -5,14 +5,14 @@
         "nombre": "Damian",
         "edad": 44,
         "residencia": "Comodoro Rivadavia - Chubut",
-        "foto_perfil": "https://github.com/damiansuarez1979/TP1_CaC_Grupo2/tree/main/img/damiansuarez.jpg" 
+        "foto_perfil": "https://github.com/damiansuarez1979/CodoACodo_Gr2_24264/tree/main/img/damiansuarez.jpg" 
         },
         {
         "apellido": "Hernandez",
         "nombre": "Ignacio",
         "edad": 31,
         "residencia": "Almirante Brown - Buenos Aires",
-        "foto_perfil": "https://github.com/damiansuarez1979/TP1_CaC_Grupo2/tree/main/img/IgnacioHernandez.jpg" 
+        "foto_perfil": "https://github.com/damiansuarez1979/CodoACodo_Gr2_24264/tree/main/img/IgnacioHernandez.jpg" 
         }
         
     ]
