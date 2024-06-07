@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     let desarroladoresData = [];
 
-     // Desactivar el botón Agregar hasta que los datos estén cargados
-     botonAgregar.disabled = true;
+     
  
     fetch("https://raw.githubusercontent.com/damiansuarez1979/CodoACodo_Gr2_24264/main/data.json?token=GHSAT0AAAAAACS6DDUQQQLXRUPIIVZWFXPGZTCLDMQ")
         .then(response => response.json())
@@ -21,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
            
             desarroladoresData = data.desarroladores;
             console.log("Datos recibidos:", desarroladoresData); 
-               // Habilitar el botón Agregar una vez que los datos estén cargados
-               botonAgregar.disabled = false;
+              
             })
         
             .catch(error => {
