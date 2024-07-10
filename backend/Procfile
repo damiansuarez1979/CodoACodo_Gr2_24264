@@ -1,1 +1,1 @@
-web: gunicorn run:Tienda_De_Bicicletas
+web: gunicorn Tienda_De_Bicicletas.wsgi:app
