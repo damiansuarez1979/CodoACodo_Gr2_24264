@@ -1,4 +1,4 @@
-from app import db
+from Tienda_De_Bicicletas import db
 
 class Bike(db.Model):
     id = db.Column(db.Integer, primary_key=True)
